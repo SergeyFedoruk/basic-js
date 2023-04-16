@@ -31,8 +31,7 @@ let hasInsideArray = (arr) => arr.some(item => Array.isArray(item));
             let count = 1;
             if (count >= max) {
                 max = count
-            }
-            ;
+            };
             let b = arr[i];
             if (Array.isArray(b)) {
                 count = count + 1;
