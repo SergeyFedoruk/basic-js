@@ -15,7 +15,7 @@ function getSeason( date   ) {
   //throw new NotImplementedError('Not implemented');
   if (date == null) return('Unable to determine the time of year!');
   if (date instanceof  Date) {
-    if (Object.getOwnPropertyNames(date)[0] === 'toString') throw new Error('Invalid date!');
+    if (Object.getOwnPropertyNames(date).length  > 0) throw new Error('Invalid date!');
 if (date.getMonth()===0) return 'winter';
     if (date.getMonth()===1) return 'winter';
     if (date.getMonth()===11) return 'winter';
